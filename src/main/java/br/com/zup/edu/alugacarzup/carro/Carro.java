@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Version;
 
 @Entity
 public class Carro {
@@ -26,6 +27,9 @@ public class Carro {
 
     @Column(nullable = false)
     private boolean disponivel;
+    
+    @Version
+    private int versao;
 
     public Carro(String modelo, Integer ano, String marca) {
         this.modelo = modelo;

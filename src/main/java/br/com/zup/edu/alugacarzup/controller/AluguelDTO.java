@@ -1,4 +1,4 @@
-package br.com.zup.edu.alugacarzup;
+package br.com.zup.edu.alugacarzup.controller;
 
 import javax.validation.constraints.NotBlank;
 
